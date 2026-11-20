@@ -23,6 +23,13 @@ earned, a platinum roadmap, and missable flags.
 - Platinum roadmap (7 stages) + missable flags
 - Zero network requests at runtime
 
+## Verification
+
+Verified with Playwright + Chromium: 20/20 checks pass — all 55 trophies
+render, grade split 1 platinum / 2 gold / 6 silver / 46 bronze, checklist
+persists across reload, spoiler hides the 18 story trophies, zero console
+errors, zero external requests.
+
 ## Run it
 
 Open `app/index.html` in desktop Chrome, or serve the `app/` folder with any
