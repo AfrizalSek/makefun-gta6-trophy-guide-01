@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Legends — GTA VI Trophy Guide &amp; Tracker</title>
+<meta name="description" content="Offline guide and tracker for all 55 Grand Theft Auto VI trophies on PlayStation 5: every official name, description and grade, a cited guide for each, a platinum roadmap, missable flags, and a saved checklist.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+    <h1>Leonida Legends</h1>
+    <p class="tagline">Every trophy, every guide, one road to the platinum. Works fully offline — no network, no account, no ads.</p>
+    <div class="progress-wrap" aria-label="Overall progress">
+      <div class="progress-line"><span id="progressText">0 of 55 earned</span><span id="progressPct">0%</span></div>
+      <div class="progress-bar"><div id="progressFill" class="progress-fill" style="width:0%"></div></div>
+      <p class="grade-counts" id="gradeCounts"></p>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Views">
+  <button id="tabTracker" type="button" class="tab active" aria-pressed="true">Tracker</button>
+  <button id="tabRoadmap" type="button" class="tab" aria-pressed="false">Platinum roadmap</button>
+</nav>
+
+<main>
+  <section id="trackerView" aria-label="Trophy tracker">
+    <div class="toolbar">
+      <label class="search-box">Search <input id="searchInput" type="search" placeholder="Trophy, mission or keyword…" autocomplete="off"></label>
+      <div class="chip-row" id="kindChips" role="group" aria-label="Filter by kind">
+        <button type="button" class="chip active" data-kind="all">All 55</button>
+        <button type="button" class="chip" data-kind="story">Story</button>
+        <button type="button" class="chip" data-kind="missable">Missable</button>
+        <button type="button" class="chip" data-kind="collectibles">Collectibles</button>
+        <button type="button" class="chip" data-kind="activities">Activities</button>
+      </div>
+      <label class="grade-box">Grade
+        <select id="gradeSelect">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="toggle"><input id="spoilerToggle" type="checkbox"> Hide story spoilers</label>
+      <label class="toggle"><input id="earnedOnlyToggle" type="checkbox"> Earned only</label>
+      <div class="io-buttons">
+        <button id="exportButton" type="button">Export progress</button>
+        <label class="import-label">Import progress <input id="importInput" type="file" accept="application/json,.json"></label>
+        <button id="resetButton" type="button" class="quiet">Reset</button>
+      </div>
+    </div>
+    <p class="result-line" id="resultLine"></p>
+    <div class="layout">
+      <ul id="trophyList" class="trophy-list" aria-label="Trophies"></ul>
+      <aside id="detailPanel" class="detail" aria-label="Trophy guide" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <section id="roadmapView" aria-label="Platinum roadmap" hidden>
+    <div class="roadmap-head">
+      <h2>The road to the platinum</h2>
+      <p id="roadmapSummary"></p>
+      <p class="roadmap-note">Built from the official trophy descriptions and PowerPyx's roadmap: difficulty 4/10, about 200 hours, one playthrough, no online trophies, no mission replay.</p>
+    </div>
+    <ol id="roadmapStages" class="roadmap-stages"></ol>
+    <div class="warnings">
+      <h3>Watch out for</h3>
+      <ul id="roadmapWarnings"></ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Official trophy names, descriptions and grades are PlayStation's published text, as listed by Exophase and PSNProfiles (18 Nov 2026). Every guide is written for this entry in our own words and cites its sources beside it. This is an unofficial fan guide — it is not affiliated with, endorsed by, or connected to Rockstar Games. No Rockstar artwork, logos or game screenshots are used.</p>
+  <p>Sources: PowerPyx — GTA 6 Trophy Guide &amp; Roadmap; Planet GTA 6 — GTA 6 Trophies: All 55 trophies; KeenGamer — GTA 6 Trophy Guide &amp; Platinum Roadmap; Sixshore — GTA 6 Trophy and Achievement List.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
