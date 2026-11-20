@@ -1,3 +1,4 @@
+# Build artifacts, kit, and dependencies — never commit these.
 kit/
 kit.tgz
 out/
